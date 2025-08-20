@@ -1,9 +1,11 @@
 <form action="action_page.php">
-  <div class="container">
+  <div class="container">i
     <h1>Welcome!! to Jerry classes , Jerry will lead the class</h1>
     <p>Please fill in this form!</p>
     <hr>
     <br>
+
+    <h1>Now This has become the CI pipeline</h1>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>

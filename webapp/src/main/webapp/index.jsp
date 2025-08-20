@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Welcome!! to Jerry classes</h1>
+    <h1>Welcome!! to Jerry classes , Jerry will lead the class</h1>
     <p>Please fill in this form!</p>
     <hr>
     <br>

@@ -120,6 +120,7 @@
     </style>
 </head>
 <body>
+	<h1>welcome suarwa aaya hai</h1>
 <header>
     Welcome to My Simple E-Commerce Store
 </header>

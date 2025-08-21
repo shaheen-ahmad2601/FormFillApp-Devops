@@ -120,7 +120,32 @@
         <p>Stylish and affordable. A must-have!</p>
         <button class="btn">Add to Cart</button>
     </div>
+
 </div>
+<div class="container">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/220x180" alt="Product 1">
+        <h3>Product 1</h3>
+        <p class="price">$19.99</p>
+        <p>High-quality product to meet your needs.</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/220x180" alt="Product 2">
+        <h3>Product 2</h3>
+        <p class="price">$29.99</p>
+        <p>Perfect for everyday use with durability.</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/220x180" alt="Product 3">
+        <h3>Product 3</h3>
+        <p class="price">$39.99</p>
+        <p>Stylish and affordable. A must-have!</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+</div>
+
 <footer>
     &copy; 2025 Simple E-Commerce. All Rights Reserved.
 </footer>

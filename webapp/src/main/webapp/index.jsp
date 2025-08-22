@@ -73,7 +73,7 @@
         <a href="patients.jsp">Patients</a>
         <a href="contact.jsp">Contact</a>
     </nav>
-    <h1>This is Doctor portal for the patients </h1>
+    <h1>This is Doctor portal for the patients: book you slot </h1>
 
     <!-- Main Content -->
     <div class="container">

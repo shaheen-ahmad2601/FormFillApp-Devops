@@ -1,225 +1,96 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Simple E-Commerce Site</title>
+    <title>Doctor WebApp - Patients</title>
     <style>
+        /* Reset default margins */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Light grey text */
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 24px;
-        }
+
+        /* Navigation Bar */
         nav {
-            background-color: #333;
-            overflow: hidden;
+            background-color: #333; /* Dark grey */
+            padding: 15px;
+            text-align: center;
         }
+
         nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 12px 16px;
+            color: #e0e0e0;
             text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .category-bar {
-            text-align: center;
-            margin: 15px 0;
-        }
-        .category-bar span {
-            display: inline-block;
-            background-color: #e0e0e0;
-            margin: 0 8px;
-            padding: 8px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        .category-bar span:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-        .product-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            padding: 16px;
-            text-align: center;
-            position: relative;
-        }
-        .discount {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #E91E63;
-            color: white;
-            padding: 4px 8px;
-            font-size: 12px;
-            border-radius: 3px;
-        }
-        .product-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .product-card h3 {
-            margin: 10px 0;
-            color: #4CAF50;
-        }
-        .product-card p {
-            margin: 5px 0;
-        }
-        .price {
-            font-size: 18px;
-            color: #E91E63;
+            margin: 0 15px;
             font-weight: bold;
         }
-        .rating {
-            color: #FFD700;
-            font-size: 14px;
+
+        nav a:hover {
+            color: #4cafef; /* Light blue on hover */
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-            border-radius: 5px;
+
+        /* Body content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #2a2a2a; /* Slightly lighter grey */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
         }
-        .btn:hover {
-            background-color: #45a049;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
         }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #333;
-            color: white;
-            margin-top: 20px;
+            color: #999;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-	<h1>welcome suarwa aaya hai</h1>
-<header>
-    Welcome to My Simple E-Commerce Store
-</header>
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Cart</a>
-    <a href="#">Contact</a>
-</nav>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.jsp">Home</a>
+        <a href="appointments.jsp">Appointments</a>
+        <a href="patients.jsp">Patients</a>
+        <a href="contact.jsp">Contact</a>
+    </nav>
 
-<div class="category-bar">
-    <span>Electronics</span>
-    <span>Clothing</span>
-    <span>Home & Kitchen</span>
-    <span>Sports</span>
-    <span>Books</span>
-</div>
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Doctor WebApp</h1>
+        <p>
+            This is a simple doctor-patient management portal. Here you can:
+        </p>
+        <ul>
+            <li>Book and manage appointments</li>
+            <li>View patient details</li>
+            <li>Get in touch with your doctor</li>
+        </ul>
+    </div>
 
-<div class="container">
-    <!-- Product 1 -->
-    <div class="product-card">
-        <div class="discount">-10%</div>
-        <img src="https://via.placeholder.com/220x180" alt="Product 1">
-        <h3>Smartphone X</h3>
-        <p class="price">$499.99</p>
-        <p class="rating">★★★★☆</p>
-        <p>Latest smartphone with amazing features.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 2 -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/220x180" alt="Product 2">
-        <h3>Wireless Headphones</h3>
-        <p class="price">$89.99</p>
-        <p class="rating">★★★★★</p>
-        <p>Crystal clear sound and noise cancellation.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 3 -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/220x180" alt="Product 3">
-        <h3>Smartwatch Pro</h3>
-        <p class="price">$149.99</p>
-        <p class="rating">★★★☆☆</p>
-        <p>Track fitness, health, and more on your wrist.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 4 -->
-    <div class="product-card">
-        <div class="discount">-25%</div>
-        <img src="https://via.placeholder.com/220x180" alt="Product 4">
-        <h3>Leather Jacket</h3>
-        <p class="price">$129.99</p>
-        <p class="rating">★★★★☆</p>
-        <p>Premium quality stylish leather jacket.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 5 -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/220x180" alt="Product 5">
-        <h3>Running Shoes</h3>
-        <p class="price">$69.99</p>
-        <p class="rating">★★★★★</p>
-        <p>Lightweight and comfortable for daily runs.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 6 -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/220x180" alt="Product 6">
-        <h3>Cooking Mixer</h3>
-        <p class="price">$49.99</p>
-        <p class="rating">★★★☆☆</p>
-        <p>Make cooking fun and easy with this mixer.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 7 -->
-    <div class="product-card">
-        <div class="discount">-15%</div>
-        <img src="https://via.placeholder.com/220x180" alt="Product 7">
-        <h3>Sports Watch</h3>
-        <p class="price">$59.99</p>
-        <p class="rating">★★★★☆</p>
-        <p>Waterproof and shock-resistant sports watch.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-    <!-- Product 8 -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/220x180" alt="Product 8">
-        <h3>Fiction Novel</h3>
-        <p class="price">$14.99</p>
-        <p class="rating">★★★★★</p>
-        <p>Engaging story with thrilling twists.</p>
-        <button class="btn">Add to Cart</button>
-    </div>
-</div>
-
-<footer>
-    &copy; 2025 Simple E-Commerce. All Rights Reserved.
-</footer>
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Doctor WebApp | Designed for simplicity and speed
+    </footer>
 </body>
 </html>
 
